@@ -1,1 +1,3 @@
-<h1>Teste</h1>
+@foreach($modelos as $modelo)
+    {{ $modelo->modelo }}
+@endforeach
