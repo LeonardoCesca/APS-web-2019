@@ -49,7 +49,8 @@ class ModeloController extends Controller
      */
     public function show($id)
     {
-        //
+        $modelo = Modelo::find($id);
+        return view('modelos.show')->with(['modelo' => $modelo]);
     }
 
     /**
