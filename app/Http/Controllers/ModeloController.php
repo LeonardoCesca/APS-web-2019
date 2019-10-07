@@ -74,7 +74,8 @@ class ModeloController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $modelo = Modelo::find($id)->update($request->all());
+        return redirect()->route('modelos.index');
     }
 
     /**
