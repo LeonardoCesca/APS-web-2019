@@ -17,8 +17,8 @@
                         <th scope="row">{{ $modelo->id }}</th>
                         <td> {{ $modelo->modelo }} </td>
                         <td>
-                            <a href="{{ route('modelos.show', ['modelo' => modelo->id]) }}">Visualizar</a>
-                            <a href="{{ route('modelos.edit', ['modelo' => modelo->id]) }}">Editar</a>
+                            <a href="{{ route('modelos.show', ['modelo' => $modelo->id]) }}">Visualizar</a>
+                            <a href="{{ route('modelos.edit', ['modelo' => $modelo->id]) }}">Editar</a>
                             <a href="#">Excluir</a>
                         </td>
                     </tr>
