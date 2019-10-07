@@ -63,6 +63,9 @@
             }
         </style>
     </head>
+    @extends('layouts.app')
+
+    @section('content')
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -97,4 +100,5 @@
             </div>
         </div>
     </body>
+        @endsection
 </html>
