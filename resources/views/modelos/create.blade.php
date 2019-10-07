@@ -1,6 +1,7 @@
 <div class="container">
     <div class="col-md-12">
         <form action="{{ route('modelos.store') }}" class="form-horizontal" method="POST">
+            @csrf
             <div class="row">
                 <div class="form-group">
                     <label>Modelo do veículo</label>

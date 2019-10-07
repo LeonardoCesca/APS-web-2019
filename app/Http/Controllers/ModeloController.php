@@ -36,7 +36,9 @@ class ModeloController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Modelo::create($request->all());
+
+        return redirect()->route('modelos.index');
     }
 
     /**
