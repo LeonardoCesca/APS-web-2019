@@ -25,7 +25,7 @@ class ModeloController extends Controller
      */
     public function create()
     {
-        //
+        return view('modelos.create');
     }
 
     /**
